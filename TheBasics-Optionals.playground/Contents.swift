@@ -64,3 +64,10 @@ if let firstNumber = Int("7"), let secondNumber = Int("99"), firstNumber > secon
 
 var aNumber = Int("123a") ?? 123
 print(aNumber)
+
+
+// MARK: - Optional Chaining -
+
+// Optional chaining is the process for querying/calling properties or methods or subscripts on an optional that might currently be nil. If the optional contains a value, call or calls succeed. if the optional is nil, the call RETURNS nil and nothing happens.
+// Multiple queries/calls can be chained together is the optional contains properties/methods/subscripts that return an optional an so on. If at point of the chain of calls returns nil, the whole line being executed will return nil.
+// Remember, optional chaining does not unwrap the return of the chain. It simply returns nil or returns an optional that contains the value. You can combine optional chaining with forced unwrapping, optional binding, nill coalescing operator, or manually conditional checking for nil to get the value from an optionally chained statement.
